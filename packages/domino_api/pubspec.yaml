@@ -1,0 +1,14 @@
+name: domino_api
+description: >-
+  Public contracts and pure table rules for Egyptian Domino Master.
+  Contains tiles, actions, events, PlayerView, config and the pure
+  single-round rules. Deliberately contains NO GameState/MatchState so that
+  AI and coach packages cannot access hidden information.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.4.0
+
+dev_dependencies:
+  test: ^1.25.0

@@ -1,0 +1,17 @@
+name: domino_engine
+description: >-
+  Game engine for Egyptian Domino Master: immutable MatchState, seeded RNG,
+  match flow (rounds to 101), scoring, and privacy-redacted PlayerViews.
+  Pure Dart, no Flutter, no I/O.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.4.0
+
+dependencies:
+  domino_api:
+    path: ../domino_api
+
+dev_dependencies:
+  test: ^1.25.0

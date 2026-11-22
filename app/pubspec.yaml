@@ -1,0 +1,35 @@
+name: asta_domino
+description: "أسطى الدومينو — Egyptian Domino vs a fair AI (temporary flat 2D UI)."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.14.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  # Game logic lives in pure-Dart packages; the UI only talks to them through
+  # the public engine API (PlayerView in, DominoAction out).
+  domino_api:
+    path: ../packages/domino_api
+  domino_engine:
+    path: ../packages/domino_engine
+  domino_ai:
+    path: ../packages/domino_ai
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal-Regular.ttf
+        - asset: assets/fonts/Tajawal-Bold.ttf
+          weight: 700

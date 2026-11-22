@@ -1,0 +1,21 @@
+name: domino_coach
+description: >-
+  Domino coach for Egyptian Domino Master: evaluates every human decision
+  using only the information available at that moment (PlayerView), classifies
+  mistakes honestly, renders explanations in Egyptian Arabic, persists an
+  aggregated mistake library, and generates practice exercises.
+  Depends only on domino_api and domino_ai (never the engine).
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.4.0
+
+dependencies:
+  domino_api:
+    path: ../domino_api
+  domino_ai:
+    path: ../domino_ai
+
+dev_dependencies:
+  test: ^1.25.0

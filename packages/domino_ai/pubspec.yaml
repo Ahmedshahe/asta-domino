@@ -1,0 +1,17 @@
+name: domino_ai
+description: >-
+  AI opponent for Egyptian Domino Master. Five levels from beginner to
+  determinization-Monte-Carlo master. Depends ONLY on domino_api and consumes
+  PlayerViews only, so it cannot access hidden game information.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.4.0
+
+dependencies:
+  domino_api:
+    path: ../domino_api
+
+dev_dependencies:
+  test: ^1.25.0

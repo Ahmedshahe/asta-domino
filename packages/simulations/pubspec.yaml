@@ -1,0 +1,21 @@
+name: simulations
+description: >-
+  Benchmark & verification harness: plays AI levels against each other using
+  the real engine and prints win rates. Separated from domino_ai so the AI
+  package itself never depends on the engine.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.4.0
+
+dependencies:
+  domino_api:
+    path: ../domino_api
+  domino_engine:
+    path: ../domino_engine
+  domino_ai:
+    path: ../domino_ai
+
+dev_dependencies:
+  test: ^1.25.0

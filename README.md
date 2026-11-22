@@ -1,3 +1,4 @@
+HEAD
 # أسطى الدومينو — Egyptian Domino
 
 A complete, fully-offline Egyptian Domino game: pure-Dart engine, a 5-level
@@ -17,7 +18,6 @@ minSdk 24 / Android 7.0+, signed with the debug key so it installs directly)
 2. Tap it → allow "install from unknown sources" when Android asks.
 3. Open **أسطى الدومينو** and play. No internet needed, ever.
 
----
 
 ## Repository layout
 
@@ -177,3 +177,4 @@ cd packages/simulations   && dart run tool/verify_ai.dart --rounds 1000
   (from stage 6 onward).
 
 Fully offline: no network access anywhere in engine, AI, coach, or app.
+
